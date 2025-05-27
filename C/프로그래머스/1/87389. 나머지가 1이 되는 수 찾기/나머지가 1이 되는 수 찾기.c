@@ -3,8 +3,13 @@
 #include <stdlib.h>
 
 int solution(int n) {
-int i = 1;
-    for(; n % i != 1; i++)
-    {}
-    return i;
+    int x = 1;
+    while(1)
+    {
+        if(n % x == 1)
+            {
+            return x;
+            }
+        ++x;
+    }
 }
