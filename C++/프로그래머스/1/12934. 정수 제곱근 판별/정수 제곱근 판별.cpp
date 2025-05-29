@@ -4,11 +4,11 @@
 #include <math.h>
 
 long long solution(long long n) {
-    long long awnser = sqrt(n);
+    long long anwser = sqrt(n);
     
-    while(awnser*awnser == n)
+    if(anwser*anwser == n)
     {
-        return (awnser+1)*(awnser+1);
+        return pow(anwser+1, 2);
     }
     return -1;
 }
