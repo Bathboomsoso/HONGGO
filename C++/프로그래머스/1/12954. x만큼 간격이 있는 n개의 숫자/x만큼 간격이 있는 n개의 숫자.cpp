@@ -5,6 +5,7 @@ using namespace std;
 
 vector<long long> solution(int x, int n) {
 vector<long long> answer(1, x);
+answer.reserve(n);
     
     for(int i = 1; i < n; ++i)
     {
